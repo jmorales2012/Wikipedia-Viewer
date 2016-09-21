@@ -16,8 +16,13 @@
         <script src="script.js"></script>
 
         <!-- Font Awesome Icons -->
-        <!-- Font Awesome Link -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+        <!-- jQery Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -25,16 +30,59 @@
                 <h1 class="header-text">Wikipedia Search</h1>
             </div>
             <div class="search-box">
-                <form onsubmit="">
+                <form onsubmit="getSearchBar(); return false;">
                     <input type="text" name="search" class="search-bar" placeholder="Enter Search">
-                    <a href="" onclick="" class="search-icon">
+                    <a href="" onclick="getSearchBar(); return false;" class="search-icon">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </a>
                 </form>
             </div>
             <div class="random">
-                <a href="" onclick="" class="random-link">Random Article</a>
+                <a href="" onclick="getRandom(); return false;" class="random-link">Random Article</a>
             </div>
+        </div>
+        <div class="search-results">
+            <a class="page-link" href="" target="_blank">
+                <li>
+                    <div class="results-container">
+                        <div class="page-title"></div>
+                        <p class="description-text"></p>
+                    </div>
+                </li>
+            </a>
+            <a class="page-link" href="" target="_blank">
+                <li>
+                    <div class="results-container">
+                        <div class="page-title"></div>
+                        <p class="description-text"></p>
+                    </div>
+                </li>
+            </a>
+            <a class="page-link" href="" target="_blank">
+                <li>
+                    <div class="results-container">
+                        <div class="page-title"></div>
+                        <p class="description-text"></p>
+                    </div>
+                </li>
+            </a>
+            <a class="page-link" href="" target="_blank">
+                <li>
+                    <div class="results-container">
+                        <div class="page-title"></div>
+                        <p class="description-text"></p>
+                    </div>
+                </li>
+            </a>
+            <a class="page-link" href="" target="_blank">
+                <li>
+                    <div class="results-container">
+                        <div class="page-title"></div>
+                        <p class="description-text"></p>
+                        </div>
+                    </div>
+                </li>
+            </a>
         </div>
     </body>
 </html>
