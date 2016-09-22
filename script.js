@@ -36,5 +36,3 @@ function getSearchBar() {
 function getRandom() {
     open("https://en.wikipedia.org/wiki/Special:Random");
 }
-
-

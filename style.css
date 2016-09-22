@@ -42,9 +42,15 @@ a {
 
 .search-bar {
     height: 30px;
-    width: 200px;
+    width: 80px;
     font-size: 14px;
     color: gray;
+    transition: width 1s;
+}
+
+.search-bar:focus {
+    height: 30px;
+    width: 200px;
 }
 
 .search-icon {
